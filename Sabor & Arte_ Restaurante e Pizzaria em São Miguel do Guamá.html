@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sabor & Arte: Restaurante e Pizzaria em São Miguel do Guamá</title>
+<meta name="description" content="Restaurante e Pizzaria Sabor & Arte, em São Miguel do Guamá (PA). Chapas, carnes grelhadas e pizzas de forno, feitas com ingredientes frescos. Avaliação 4,6 de 200 clientes. Peça pelo WhatsApp ou reserve sua mesa.">
+<meta name="keywords" content="restaurante São Miguel do Guamá, pizzaria São Miguel do Guamá, chapa mista, picanha, Sabor e Arte, comida pará">
+<meta property="og:title" content="Sabor & Arte: Restaurante e Pizzaria">
+<meta property="og:description" content="Chapas, carnes no ponto e pizzas de forno em São Miguel do Guamá, PA. Avaliação 4,6★ de 200 clientes.">
+<meta property="og:type" content="restaurant.restaurant">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Restaurante E Pizzaria Sabor & Arte",
+  "servesCuisine": ["Pizza", "Brazilian", "Grill"],
+  "priceRange": "R$ 20–100",
+  "telephone": "+5591980349087",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tv. Inácio Neto, 456-772",
+    "addressLocality": "São Miguel do Guamá",
+    "addressRegion": "PA",
+    "postalCode": "68660-000",
+    "addressCountry": "BR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "200"
+  }
+}
+</script>
+<style>
+  :root{
+    --charcoal:#1c1712;
+    --charcoal-2:#241d16;
+    --cream:#f1e7d6;
+    --cream-2:#e9dcc4;
+    --brick:#b8402a;
+    --brick-2:#96311f;
+    --gold:#d9a441;
+    --forest:#33473a;
+    --ink:#2a2118;
+    --text-light:#f4eee0;
+    --text-muted:#c9bda6;
+    --radius:3px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  section{padding:88px 0}
+  @media(max-width:640px){section{padding:56px 0}}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;top:env(safe-area-inset-top,0px);z-index:50;
+    background:rgba(28,23,18,.94);backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(217,164,65,.18);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1160px;margin:0 auto}
+  .logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.35rem;color:var(--text-light)}
+  .logo span{color:var(--gold)}
+  .nav-links{display:flex;gap:32px;list-style:none}
+  .nav-links a{color:var(--text-muted);font-size:.94rem;font-weight:500;transition:color .2s}
+  .nav-links a:hover{color:var(--gold)}
+  .nav-cta{display:flex;align-items:center;gap:14px}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 24px;border-radius:var(--radius);font-weight:600;font-size:.92rem;
+    border:1px solid transparent;cursor:pointer;transition:transform .18s ease, background .2s;
+  }
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:var(--brick);color:#fff}
+  .btn-primary:hover{background:var(--brick-2)}
+  .btn-gold{background:var(--gold);color:var(--charcoal)}
+  .btn-ghost{border-color:rgba(244,238,224,.35);color:var(--text-light)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .btn-dark{background:var(--charcoal);color:var(--text-light)}
+  .menu-toggle{display:none;background:none;border:none;color:var(--text-light)}
+  @media(max-width:860px){
+    .nav-links{display:none}
+    .menu-toggle{display:block}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:radial-gradient(120% 100% at 85% 0%, #2c2118 0%, var(--charcoal) 55%), var(--charcoal);
+    color:var(--text-light);position:relative;overflow:hidden;
+    padding:96px 0 80px;
+  }
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+  @media(max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+  .badge-row{display:flex;align-items:center;gap:10px;margin-bottom:22px;color:var(--gold);font-size:.9rem;font-weight:600}
+  .stars svg{width:15px;height:15px;fill:var(--gold)}
+  .hero h1{font-size:clamp(2.4rem,5vw,3.6rem);color:var(--text-light);max-width:12ch}
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero p.lede{margin-top:20px;font-size:1.12rem;color:var(--text-muted);max-width:46ch}
+  .hero-ctas{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+  .hero-stats{display:flex;gap:34px;margin-top:46px;flex-wrap:wrap}
+  .hero-stats div strong{display:block;font-family:'Fraunces',serif;font-size:1.7rem;color:var(--gold)}
+  .hero-stats div span{font-size:.82rem;color:var(--text-muted)}
+  .hero-art{position:relative;display:flex;justify-content:center}
+  .hero-art svg{width:100%;max-width:420px;filter:drop-shadow(0 30px 50px rgba(0,0,0,.45))}
+
+  /* ---------- sobre ---------- */
+  .sobre .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+  @media(max-width:860px){.sobre .wrap{grid-template-columns:1fr}}
+  .eyebrow{color:var(--brick);font-weight:600;font-size:.85rem;margin-bottom:10px}
+  .sobre h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:20px}
+  .sobre p{color:#5a4d3c;max-width:52ch;margin-bottom:16px}
+  .diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px}
+  @media(max-width:480px){.diff-grid{grid-template-columns:1fr}}
+  .diff-item{border-left:2px solid var(--brick);padding-left:16px}
+  .diff-item strong{display:block;font-family:'Fraunces',serif;font-size:1.05rem;margin-bottom:4px}
+  .diff-item p{font-size:.92rem;color:#6b5d49;margin:0}
+  .sobre-art{background:var(--forest);border-radius:6px;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;padding:40px}
+  .sobre-art svg{width:100%}
+
+  /* ---------- cardápio / portfólio ---------- */
+  .menu-section{background:var(--charcoal-2);color:var(--text-light)}
+  .section-head{max-width:600px;margin-bottom:52px}
+  .section-head h2{font-size:clamp(1.9rem,3.4vw,2.6rem)}
+  .menu-section .eyebrow{color:var(--gold)}
+  .menu-section p.desc{color:var(--text-muted);margin-top:14px}
+  .dish-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(244,238,224,.12)}
+  @media(max-width:900px){.dish-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.dish-grid{grid-template-columns:1fr}}
+  .dish{background:var(--charcoal-2);padding:32px 26px;transition:background .25s}
+  .dish:hover{background:#2a221a}
+  .dish svg{width:36px;height:36px;stroke:var(--gold);fill:none;stroke-width:1.4;margin-bottom:18px}
+  .dish h3{font-size:1.08rem;font-weight:600;margin-bottom:6px}
+  .dish p{font-size:.85rem;color:var(--text-muted)}
+  .menu-note{margin-top:36px;color:var(--text-muted);font-size:.9rem}
+
+  /* ---------- depoimentos ---------- */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  @media(max-width:860px){.testi-grid{grid-template-columns:1fr}}
+  .testi{background:#fff;border:1px solid #e6d9bf;border-radius:6px;padding:30px 28px}
+  .testi .stars svg{fill:var(--brick)}
+  .testi p{margin:16px 0 20px;font-size:.98rem;color:#4a3f30}
+  .testi-name{font-weight:600;font-size:.9rem}
+  .testi-meta{font-size:.8rem;color:#8a7a60}
+
+  /* ---------- faq ---------- */
+  .faq-list{max-width:760px}
+  .faq-item{border-bottom:1px solid #ddcda8}
+  .faq-q{width:100%;text-align:left;background:none;border:none;padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;cursor:pointer;font-family:'Fraunces',serif;font-size:1.08rem;color:var(--ink)}
+  .faq-q svg{width:18px;height:18px;flex-shrink:0;stroke:var(--brick);fill:none;stroke-width:2;transition:transform .25s}
+  .faq-item.open .faq-q svg{transform:rotate(45deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+  .faq-a p{padding-bottom:20px;color:#5a4d3c;max-width:60ch;font-size:.95rem}
+
+  /* ---------- contato ---------- */
+  .contato{background:var(--forest);color:var(--text-light)}
+  .contato .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  @media(max-width:900px){.contato .wrap{grid-template-columns:1fr}}
+  .contato .eyebrow{color:var(--gold)}
+  .contato h2{font-size:clamp(1.9rem,3.4vw,2.4rem);color:var(--text-light);margin-bottom:16px}
+  .contato p.lede{color:#d6ddd8;max-width:44ch;margin-bottom:30px}
+  .info-row{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
+  .info-row svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.6;flex-shrink:0;margin-top:2px}
+  .info-row strong{display:block;font-size:.95rem}
+  .info-row span{font-size:.88rem;color:#c9d4cd}
+  .map-card{margin-top:26px;border:1px solid rgba(244,238,224,.25);border-radius:6px;padding:22px;background:rgba(0,0,0,.15)}
+  .map-card a{color:var(--gold);font-weight:600;font-size:.9rem}
+  form{background:#fff;border-radius:6px;padding:36px;color:var(--ink)}
+  .field{margin-bottom:18px}
+  .field label{display:block;font-size:.84rem;font-weight:600;margin-bottom:6px;color:#4a3f30}
+  .field input,.field textarea{
+    width:100%;border:1px solid #d9cba8;border-radius:4px;padding:12px 14px;font-family:'Inter',sans-serif;font-size:.95rem;
+    background:#fdfaf3;color:#2a2118;caret-color:#2a2118;color-scheme:light;
+  }
+  .field input::placeholder,.field textarea::placeholder{color:#9a8a6c;opacity:1}
+  .field input:focus,.field textarea:focus{outline:2px solid var(--brick);outline-offset:1px}
+  .field textarea{resize:vertical;min-height:100px}
+  form .btn{width:100%;justify-content:center}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--charcoal);color:var(--text-muted);padding:48px 0 32px;font-size:.85rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center}
+  footer .logo{font-size:1.1rem}
+
+  /* ---------- whatsapp float ---------- */
+  .wa-float{
+    position:fixed;bottom:24px;bottom:calc(24px + env(safe-area-inset-bottom,0px));right:24px;z-index:60;
+    background:#25D366;width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.3);
+    transition:transform .2s;
+  }
+  .wa-float:hover{transform:scale(1.07)}
+  .wa-float svg{width:28px;height:28px;fill:#fff}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+  :focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#top" class="logo">Sabor <span>&</span> Arte</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">A casa</a></li>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#faq">Perguntas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="https://wa.me/5591980349087?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank" rel="noopener">Reservar mesa</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="reveal in">
+      <div class="badge-row">
+        <span class="stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.7.5-5.1 4.4 1.6 6.6L10 15.2l-5.8 3.5 1.6-6.6L.7 7.7l6.7-.5z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.7.5-5.1 4.4 1.6 6.6L10 15.2l-5.8 3.5 1.6-6.6L.7 7.7l6.7-.5z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.7.5-5.1 4.4 1.6 6.6L10 15.2l-5.8 3.5 1.6-6.6L.7 7.7l6.7-.5z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.7.5-5.1 4.4 1.6 6.6L10 15.2l-5.8 3.5 1.6-6.6L.7 7.7l6.7-.5z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.7.5-5.1 4.4 1.6 6.6L10 15.2l-5.8 3.5 1.6-6.6L.7 7.7l6.7-.5z"/></svg>
+        </span>
+        4,6 de 200 avaliações no Google
+      </div>
+      <h1>Sabor de chapa quente, <em>arte</em> de forno a lenha.</h1>
+      <p class="lede">Em São Miguel do Guamá, a Sabor & Arte serve carnes grelhadas na hora, frutos do mar e pizzas artesanais num ambiente pensado para reunir a família, do dia a dia às ocasiões especiais.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="https://wa.me/5591980349087?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
+        <a class="btn btn-ghost" href="#cardapio">Ver cardápio</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>200+</strong><span>avaliações no Google</span></div>
+        <div><strong>4,6★</strong><span>nota média</span></div>
+        <div><strong>3</strong><span>opções: local, viagem, entrega</span></div>
+      </div>
+    </div>
+    <div class="hero-art reveal in">
+      <svg viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="210" r="160" fill="none" stroke="#d9a441" stroke-width="1" opacity=".35"/>
+        <circle cx="200" cy="210" r="130" fill="#241d16" stroke="#d9a441" stroke-width="1.2"/>
+        <path d="M200 100 L260 300 L140 300 Z" fill="none" stroke="#b8402a" stroke-width="2"/>
+        <circle cx="185" cy="180" r="7" fill="#d9a441"/>
+        <circle cx="220" cy="205" r="6" fill="#d9a441"/>
+        <circle cx="195" cy="240" r="7" fill="#d9a441"/>
+        <circle cx="225" cy="255" r="5" fill="#d9a441"/>
+        <path d="M170 280 Q200 265 230 280" stroke="#f1e7d6" stroke-width="1.5" fill="none" opacity=".5"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="wrap">
+    <div class="sobre-art reveal">
+      <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="150" width="160" height="14" rx="2" fill="#d9a441"/>
+        <path d="M40 150 C40 90 70 50 100 50 C130 50 160 90 160 150 Z" fill="none" stroke="#f1e7d6" stroke-width="2"/>
+        <path d="M60 150 C60 100 78 70 100 70 C122 70 140 100 140 150" fill="none" stroke="#d9a441" stroke-width="1.2" opacity=".6"/>
+      </svg>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">A casa</p>
+      <h2>Comida de família, feita para durar na memória</h2>
+      <p>A Sabor & Arte nasceu para ser o point da cidade onde se come bem, sem pressa e sem pesar no bolso. Cada chapa sai na temperatura certa, o forno de pizza mantém a crosta fina e crocante, e o atendimento é o de quem conhece o cliente pelo nome.</p>
+      <p>Servimos almoço e jantar todos os dias, com opções para comer no salão, levar para casa ou receber em domicílio.</p>
+      <div class="diff-grid">
+        <div class="diff-item"><strong>Ingredientes frescos</strong><p>Carnes, camarão e peixe preparados no ponto, sem porções congeladas.</p></div>
+        <div class="diff-item"><strong>Preço justo</strong><p>Pratos para compartilhar a partir de R$ 20 por pessoa.</p></div>
+        <div class="diff-item"><strong>Ambiente familiar</strong><p>Espaço amplo, pensado para grupos e crianças.</p></div>
+        <div class="diff-item"><strong>Três formas de comer</strong><p>Local, para viagem ou entrega: você escolhe.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu-section" id="cardapio">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Cardápio</p>
+      <h2>Os pratos que fazem a fama da casa</h2>
+      <p class="desc">Uma seleção da chapa, da grelha e do forno, com os pedidos mais queridos pelos nossos clientes.</p>
+    </div>
+    <div class="dish-grid">
+      <div class="dish reveal"><svg viewBox="0 0 24 24"><path d="M4 14c0-5 4-9 8-9s8 4 8 9"/><path d="M4 14h16v3a2 2 0 01-2 2H6a2 2 0 01-2-2z"/></svg><h3>Camarão na Chapa</h3><p>Camarões grelhados na chapa quente, temperados na medida.</p></div>
+      <div class="dish reveal"><svg viewBox="0 0 24 24"><rect x="3" y="10" width="18" height="8" rx="1"/><path d="M6 10V7a2 2 0 012-2h8a2 2 0 012 2v3"/></svg><h3>Chapa Mista</h3><p>Seleção de carnes e acompanhamentos para dividir à mesa.</p></div>
+      <div class="dish reveal"><svg viewBox="0 0 24 24"><path d="M12 2v20M6 6l6-4 6 4M6 18l6 4 6-4"/></svg><h3>Picanha no Queijo Marajoara</h3><p>Corte nobre coberto por queijo Marajoara derretido.</p></div>
+      <div class="dish reveal"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="9" ry="5"/><path d="M3 12c0 2 4 3 9 3s9-1 9-3"/></svg><h3>Peixe Frito</h3><p>Peixe fresco, empanado e frito na hora, crocante por fora.</p></div>
+      <div class="dish reveal"><svg viewBox="0 0 24 24"><path d="M6 3h12l-1 6a5 5 0 01-10 0z"/><path d="M12 15v6M8 21h8"/></svg><h3>Carne de Sol</h3><p>No ponto tradicional, acompanhada de farofa da casa.</p></div>
+      <div class="dish reveal"><svg viewBox="0 0 24 24"><path d="M8 3h8l-1 12a3 3 0 01-3 3 3 3 0 01-3-3z"/><path d="M8 3a2 2 0 002 2h4a2 2 0 002-2"/></svg><h3>Chopp Gelado</h3><p>Servido na temperatura ideal para acompanhar qualquer prato.</p></div>
+      <div class="dish reveal"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="9" ry="5"/><path d="M6 9c2 2 10 2 12 0"/></svg><h3>Pescada na Chapa</h3><p>Filé grelhado, leve e suculento, direto da chapa à mesa.</p></div>
+      <div class="dish reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1"/><circle cx="14" cy="9" r="1"/><circle cx="12" cy="14" r="1"/><circle cx="16" cy="14" r="1"/></svg><h3>Pizza de Pepperoni</h3><p>Massa fina de forno, generosa cobertura de pepperoni.</p></div>
+    </div>
+    <p class="menu-note">Cardápio completo disponível no salão e por WhatsApp, com valores por pessoa entre R$ 20 e R$ 100.</p>
+  </div>
+</section>
+
+<section class="depoimentos" id="depoimentos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Depoimentos</p>
+      <h2>O que dizem os nossos clientes</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi reveal">
+        <span class="stars">★★★★★</span>
+        <p>Comida ótima, atendimento excelente e, acima de tudo, o preço é bem em conta.</p>
+        <div class="testi-name">Adielson Rodrigues Jaques</div>
+        <div class="testi-meta">Google Avaliações</div>
+      </div>
+      <div class="testi reveal">
+        <span class="stars">★★★★★</span>
+        <p>Ambiente familiar, pizza saborosa e valores acessíveis. Uma boa pedida para ir com a família.</p>
+        <div class="testi-name">Jean Bastos</div>
+        <div class="testi-meta">Google Avaliações</div>
+      </div>
+      <div class="testi reveal">
+        <span class="stars">★★★★★</span>
+        <p>Ótimo lugar para fazer uma refeição com a família, porção boa e sucos bons.</p>
+        <div class="testi-name">Cliente Google</div>
+        <div class="testi-meta">Google Avaliações</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Perguntas frequentes</p>
+      <h2>Tudo o que você precisa saber</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">Qual o horário de funcionamento? <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Abrimos todos os dias a partir das 11h. Recomendamos confirmar pelo WhatsApp em dias de maior movimento, como fins de semana.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Vocês fazem entrega? <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Sim. Você pode comer no salão, retirar para viagem ou pedir entrega, fale direto com a gente pelo WhatsApp para calcular a taxa da sua região.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">É preciso reservar mesa? <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Para grupos grandes ou datas especiais, recomendamos reservar com antecedência pelo WhatsApp. Para o dia a dia, normalmente há mesas disponíveis.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Qual o valor médio por pessoa? <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>O tíquete médio fica entre R$ 20 e R$ 100 por pessoa, dependendo dos pratos escolhidos e se a mesa for dividida.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O espaço é adequado para famílias com crianças? <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Sim, o ambiente é amplo e pensado para receber famílias e grupos com conforto.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Contato</p>
+      <h2>Venha nos visitar ou faça seu pedido</h2>
+      <p class="lede">Estamos à disposição para reservas, dúvidas sobre o cardápio ou pedidos para entrega.</p>
+
+      <div class="info-row">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div><strong>Endereço</strong><span>Tv. Inácio Neto, 456-772, São Miguel do Guamá, PA, 68660-000</span></div>
+      </div>
+      <div class="info-row">
+        <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.4 2.1L8 9.6a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.4c.8.3 1.7.5 2.6.6a2 2 0 011.7 2.1z"/></svg>
+        <div><strong>WhatsApp / Telefone</strong><span>(91) 98034-9087</span></div>
+      </div>
+      <div class="info-row">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div><strong>Horário</strong><span>Todos os dias, a partir das 11h</span></div>
+      </div>
+
+      <div class="map-card">
+        <strong style="display:block;margin-bottom:6px">Como chegar</strong>
+        <span style="font-size:.88rem;color:#c9d4cd">Tv. Inácio Neto, 456-772, São Miguel do Guamá, PA</span><br>
+        <a href="https://www.google.com/maps/search/?api=1&query=Restaurante+E+Pizzaria+Sabor+%26+Arte+S%C3%A3o+Miguel+do+Guam%C3%A1" target="_blank" rel="noopener">Abrir no Google Maps →</a>
+      </div>
+    </div>
+
+    <form id="contactForm" aria-label="Formulário de contato">
+      <div class="field">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" required placeholder="Seu nome">
+      </div>
+      <div class="field">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" required placeholder="(91) 9XXXX-XXXX">
+      </div>
+      <div class="field">
+        <label for="pessoas">Pessoas / data desejada</label>
+        <input type="text" id="pessoas" placeholder="Ex: 4 pessoas, sábado à noite">
+      </div>
+      <div class="field">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" placeholder="Conte o que você precisa..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" class="logo">Sabor & Arte</a>
+    <span>Tv. Inácio Neto, 456-772, São Miguel do Guamá, PA · (91) 98034-9087</span>
+    <span>© 2026 Sabor & Arte. Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5591980349087?text=Ol%C3%A1!" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.4A10 10 0 1012 2zm5.6 14.2c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-3.2-.7-2.7-1.1-4.5-3.7-4.6-3.9-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.6.7 1.9.8 2 .1.2.1.4 0 .6-.6 1.2-1.2.9-.6 1.8 1 1.5 1.9 2 3.3 2.7.2.1.4.1.6-.1.2-.2.8-.9 1-1.2.2-.3.4-.2.7-.1.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.5z"/></svg>
+</a>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    const q=item.querySelector('.faq-q'), a=item.querySelector('.faq-a');
+    q.addEventListener('click',()=>{
+      const isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o=>{o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight=null;});
+      if(!isOpen){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
+    });
+  });
+
+  // Scroll reveal
+  try{
+    const obs=new IntersectionObserver(entries=>{
+      entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});
+    },{threshold:.12});
+    document.querySelectorAll('.reveal:not(.in)').forEach(el=>obs.observe(el));
+  }catch(e){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));}
+
+  // Contact form -> WhatsApp
+  document.getElementById('contactForm').addEventListener('submit',function(ev){
+    ev.preventDefault();
+    const nome=document.getElementById('nome').value.trim();
+    const tel=document.getElementById('telefone').value.trim();
+    const pessoas=document.getElementById('pessoas').value.trim();
+    const msg=document.getElementById('mensagem').value.trim();
+    let text=`Olá! Meu nome é ${nome}.`;
+    if(pessoas) text+=` Gostaria de reservar para: ${pessoas}.`;
+    if(msg) text+=` ${msg}`;
+    text+=` Meu telefone: ${tel}.`;
+    window.open('https://wa.me/5591980349087?text='+encodeURIComponent(text),'_blank');
+  });
+</script>
+
+</body>
+</html>
